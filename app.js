@@ -1,6 +1,7 @@
 const swiper = new Swiper(".swiper", {
     speed: 400,
-    spaceBetween: 30,
+    slidesPerView: 1.5,
+    spaceBetween: 10,
     effect: "coverflow",
     centeredSlides: true,
     freeMode: true,

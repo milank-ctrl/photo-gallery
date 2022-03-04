@@ -1,41 +1,50 @@
-
-
-body{
-    font-family: sans-serif;
-    background-image: linear-gradient(135deg, #111213 0%, #2c333d 100%);
-
-  }
-
-  * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
   }
-  
-  .title {
-    margin: 2em 0;
+
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(135deg, #111213 0%, #2c333d 100%);
+    min-height: 100vh;
   }
-  h1 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
-    text-transform: uppercase;
-    color: black;
+
+  html {
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
+  section {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em 1em 4em 1em;
+  }
+
   .swiper {
-    height: 80vh;
-    width: 50vw;
-  }
-  
-  img {
+    margin-top: 2em;
+    height: 70vh;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    position: relative;
+  }
+
+  .swiper-slide {
     border-radius: 20px;
+  }
+
+ img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
   }
   
   .swiper-pagination {
@@ -45,7 +54,7 @@ body{
   .swiper-pagination-bullet {
     background-color: white;
   }
-  
+
   .swiper-button-next,
   .swiper-button-prev {
     background-image: none;
