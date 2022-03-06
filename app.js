@@ -4,7 +4,7 @@ const swiper = new Swiper(".swiper", {
     spaceBetween: 10,
     //effect: "coverflow",
     coverflowEffect: {
-        rotate: 20,
+        rotate: 40,
         slideShadows: false
     },
     centeredSlides: true,
@@ -19,6 +19,10 @@ const swiper = new Swiper(".swiper", {
     loop: true,
     pagination: {
         el: null
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     }
 
 });
