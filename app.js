@@ -1,8 +1,8 @@
 const swiper = new Swiper(".swiper", {
     speed: 400,
-    slidesPerView: 1.5,
+    slidesPerView: 1,
     spaceBetween: 10,
-    effect: "coverflow",
+    //effect: "coverflow",
     coverflowEffect: {
         rotate: 20,
         slideShadows: false
@@ -10,23 +10,18 @@ const swiper = new Swiper(".swiper", {
     centeredSlides: true,
     freeMode: {
         enabled: true,
-        sticky: true 
+        sticky: true
+    },
+    mousewheel: {
+        enable: true
     },
     grabCursor: true,
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-      dynamicBullets: true
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+        el: null
     }
-    
-  });
-  
-  // Now you can use all slider methods like
-  swiper.slideNext();
-  
+
+});
+
+// Now you can use all slider methods like
+swiper.slideNext();
